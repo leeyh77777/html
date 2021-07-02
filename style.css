@@ -1,0 +1,23 @@
+#box1{
+	background-color: red;
+	width: 400px;
+	height:400px;'
+}
+
+.box2 {
+	background-color: blue;
+	width: 200px;
+	height: 200px;
+	}
+	
+span{
+	width: 100px;
+	height: 100px;
+	background-color: green;
+}
+
+p{
+	width:150px;
+	height:150px;
+	background-color: yellow;
+}
