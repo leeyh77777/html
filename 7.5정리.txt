@@ -130,3 +130,78 @@ red, blue, green, yellow
 4.RGBA
    A-알파채널(투명도 : 0~1)
    0에 가까울수록 투명, 1에 가까울수록 불투명
+
+padding: 
+marggint:
+
+table
+    th, td
+        rospan : 행병합
+        colspan : 열병합
+
+align : 가로정렬(left, right, center)
+valign : 수직정렬(top, middle, bottom)
+
+img
+    src : 이미지 경로
+    width
+    height
+    alt : 대체문구(이미지 안나올때 나오는 문구)
+
+body
+    bgcolor 전체 배경색
+    text 글꼴 색
+    link  a 태그 링크 기본색상
+    vlink a 태그 이동 후 색상
+    alink a 태그 클릭할때 색상
+
+form : 양식, 신청서
+<form method="" action="">
+
+</form>
+    method : 전송방식 (GET, POST)
+     <a href='/goods_list?cateCd=032&brandcd=001'></a>
+     쿼리스트링
+
+    action : 양식데이터를 처리할 URL
+    enctype :파일을 업로드 할때
+        (enctype="multipart/form-data")
+
+    targe:
+    _self (현재창)
+    _blank (새창)
+    _내부창의 name 속성 값
+
+    그룹화 태그
+    <fieldset>
+        <legend>
+    </fieldset>
+
+    <label></label>
+레이블은 체크박스시에 글자를 선택해서 클릭되게 해준다
+
+    id : checkbox, radio
+    for : label
+
+multiple : 여러개 선택 가능(컨트롤 누르고):size="2"(보이는 메뉴수 설정)
+size- 한번에 노출할 갯수
+
+특정 option을 선택할때 : selected
+
+type
+    submit : 양식 제출 버튼
+    button : 일반적인 버튼
+    reset : 양식 취소 버튼
+
+버튼 차이(인풋,버튼)
+<input type="submit,button,reset" value="버튼명">
+
+<button type="submit,button,reset">버튼명</button>
+
+type
+    image : 제출 버튼(이미지 제출버튼 - submit와 동일한 기능)
+        src 속성 : 이미지 경로
+예:    <form action="http://yonggyo.com/~webclass" method="GET">
+        <input type="hidden" name="mode" value="join"> 
+        <input type="image" src="img/banner1.jpg">
+    </form>

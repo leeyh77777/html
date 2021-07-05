@@ -1,28 +1,36 @@
 <!doctype html>
 <html>
 	<head>
-		<meta charset='usf-8'>
+		<meta charset='utf-8'>
 		<title>롤링배너 연습</title>
-		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
 		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 	</head>
-	<body>
-	    <div class="swiper-container mySwiper">
+	
+	 <body>
+    <!-- Swiper -->
+    <div class="swiper-container mySwiper">
       <div class="swiper-wrapper">
+	  
         <div class="swiper-slide">
-		<img src="img/banner1.jpg">
-		</div>
-		<div class="swiper-slide">
-		<img src="img/banner2.jpg">
+			<img src="img/banner1.jpg">
 		</div>
         <div class="swiper-slide">
-		<img src="img/banner3.jpg">
+			<img src="img/banner2.jpg">
 		</div>
+        <div class="swiper-slide">
+			<img src="img/banner3.jpg">
+		</div>
+		
       </div>
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
     </div>
-	  <!-- Initialize Swiper -->
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
     <script>
       var swiper = new Swiper(".mySwiper", {
         navigation: {
@@ -31,5 +39,5 @@
         },
       });
     </script>
-	</body>
+  </body>
 </html>
