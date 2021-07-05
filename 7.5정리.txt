@@ -3,7 +3,8 @@ https://ringotree.tistory.com/entry/%EA%B5%AD%EB%AF%BC%EB%82%B4%EC%9D%BC%EB%B0%B
 https://github.com/yonggyo1981(선생님 깃허브 강의영상등 확인하자)
 https://skillazit.tistory.com/21(git 이페이지에서 확인하자~!)
 2021.07.05 수업
-​
+<fieldset> 태그 공부하기~!​
+
 양식태그 :
 <form>
     데이터입력
@@ -205,3 +206,9 @@ type
         <input type="hidden" name="mode" value="join"> 
         <input type="image" src="img/banner1.jpg">
     </form>
+
+    id
+    class
+        어떤 기능을위한 속성
+    name
+        찾는것 에대한 속성
