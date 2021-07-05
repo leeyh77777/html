@@ -1,0 +1,132 @@
+https://ringotree.tistory.com/entry/%EA%B5%AD%EB%AF%BC%EB%82%B4%EC%9D%BC%EB%B0%B0%EC%9B%80%EC%B9%B4%EB%93%9C-%EA%B8%B0%EA%B0%84%EB%A7%8C%EB%A3%8C-%EC%9E%AC-%EC%8B%A0%EC%B2%AD%EB%B0%A9%EB%B2%95-%EC%B9%B4%EB%93%9C-%EC%9E%AC%EB%B0%9C%EA%B8%89-%EC%97%86%EC%9D%B4-%EC%97%B0%EC%9E%A5%EA%B0%80%EB%8A%A5
+(내일배움카드 연장)
+https://github.com/yonggyo1981(선생님 깃허브 강의영상등 확인하자)
+https://skillazit.tistory.com/21(git 이페이지에서 확인하자~!)
+2021.07.05 수업
+​
+양식태그 :
+<form>
+    데이터입력
+
+문장:      <input type="text"><br>
+​단일선택:  <input type="radio">
+다중선택:  <input type="checkbox">
+비밀번호:  <input type="password"><br>
+이메일:    <input type="email"><br>
+숫자:      <input type="number"><br>
+범위:      <input type="range" min='10' max='30'><br>
+색상:      <input type="color"><br>
+날짜:      <input type="date"><br>​
+            문장여러줄입력<br>
+            <textarea></textarea>
+            <br>
+            다중선택
+            <input type="text" list="flower">
+            <datalist id="flower">
+                <option value="장미"></option>
+                <option value="튤립"></option>
+                <option value="코스모스"></option>
+            </datalist>
+        </form>​
+</form>
+-------------------------------------------------------
+form
+  method - 양식의 데이터를 전송하는 방식
+   -GET
+       :URL 형태로 전송이 되는 데이터(브라우저 주소창에 노출)
+        브라우저 주소창에 입력하는 문자 갯수의 제한
+        (전송할 데이터의 용량이 제한이 있다)
+   -POST
+       :브라우저 주소창에 노출이 되지 않는 데이터 
+       내부적으로 처리(용량에 제한이 비교적 덜 하다)
+       많은데이터 전송시 사용
+       예) 파일을 전송 시 - enctype="multipart/form-data"
+action - 양식 데이터를 전송할 URL
+​
+target - 전송할 창
+​
+enctype
+​
+input, select, textarea
+데이터를 찾을 수 있는 속성 - name
+기본값을 지정하는 속성 - value
+​
+radio, checked -> 값을 선택하는 속성 checked
+​
+select에서 값을 선택하는 속성 -> selected(option 태그에 정의)
+​
+textarea
+   -row : 영역을 몇줄 만큼 늘릴 것인지
+   -cols : 영역을 몇칸 만큼 늘릴 것인지
+​
+회원가입 양식
+​
+input
+ type - 버튼관련타입
+submit(양식제출), button(일반버튼), reset(양식취소)
+​
+placeholder : 안내문구
+
+pre: 서식 유지 태그
+
+del : 중간 선 (취소선)_strike동일함
+
+align : 가로정렬(왼쪽left 가운데 center 오른쪽 right)
+valign : 수직정렬(위 top 가운데 middle 아래 bottom)
+
+&nbsp; : 공백 1개
+&amp; : &
+&lt; : <
+&gt; : >
+
+ul : unordered list : 순서가 없는 목록
+ol : ordered list : 순서가 있는 목록
+속성 : type(1,a,I(로마),i(로마)) star=2(2부터 시작)
+
+dl : dt,dd
+
+a:링크
+ href :링크 이동
+ targe : 이동할 창
+             _slef :현재창(기본값) 
+                <a href="naver.com" targe="_self">
+             _blank : 새창
+             내부 창의 name 값
+    내부창은 같은 페이지 하부의 iframe
+      <iframe name="innerWindow" width="100% height="500" target="innerWindow"></iframe>
+: 이메일 발송  <A href="mailto:lyh@naver.com">이메일</a>
+
+-------------------------책------------------------------
+브라우저 - 자바스크립트 해석기
+(자바스크립트 런타임)
+
+자바스크립트 : 사용자와 상호작용
+
+자바스크립트 코어 소스(ECMAScript)
+브라우저 관련 소스(브라우저에만 있는 소스)
+
+태그는 웬만하면 소문자로
+
+색상
+
+경계선
+글꼴 색상
+배경색
+
+1.색상명
+red, blue, green, yellow
+
+2. RGB
+ red       green    blue
+ (0~255)  (0~255)  (0~255)
+ 255*255*255
+
+ 3. HEX 코드(16진수 코드)
+ RED
+ RGB   255, 0, 0
+​16진수 ff 00 00
+(0~10,a,b,c,d,e,f)
+
+4.RGBA
+   A-알파채널(투명도 : 0~1)
+   0에 가까울수록 투명, 1에 가까울수록 불투명
