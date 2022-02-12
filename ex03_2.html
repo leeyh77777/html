@@ -50,9 +50,20 @@
         </li>
         <li>
             몸무게(kg) :
+            <script>
+                function setValue(this) {
+                    range_value.value=this.value;
+                }
+            </script>
+            <div id="range_value"></div>
             55kg
-            <input type="range" name="weight" min="55" max="130">
+            <input type="range" name="weight" min="55" max="130" id="range">
             130kg
+            <script>
+                document.querySelector('#range').addEventListener('input',e=>{
+                    document.querySelector('#range_value').innerHTML= e.target.value + "kg";
+                });
+            </script>
         </li> 
     </ul>
         <hr>
